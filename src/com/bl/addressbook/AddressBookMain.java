@@ -12,7 +12,8 @@ public class AddressBookMain {
         int Number;
 
         do {
-            System.out.println(" 1. Add Contact \n 2. Display contact \n 3. Edit contact \n");
+            System.out.println(" 1. Add Contact \n 2. Display contact \n 3. Edit contact \n" +
+                    " 4. Delete Contact \n ");
             System.out.println("Enter the  Number: ");
 
             Number = sc.nextInt();
@@ -29,6 +30,9 @@ public class AddressBookMain {
                     addressBook.editContact();
                     break;
 
+                case 4:
+                    addressBook.deleteContact();
+                    break;
 
                 default:
                     System.out.println(" Invalid Input!!! ");
