@@ -12,7 +12,7 @@ public class AddressBookMain {
         int Number;
 
         do {
-            System.out.println(" 1. Add Contact \n 2. Display contact ");
+            System.out.println(" 1. Add Contact \n 2. Display contact \n 3. Edit contact \n");
             System.out.println("Enter the  Number: ");
 
             Number = sc.nextInt();
@@ -23,14 +23,19 @@ public class AddressBookMain {
                     addressBook.addContact();
                     break;
                 case 2:
-                addressBook.displayContact();
-                break;
+                     addressBook.displayContact();
+                     break;
+                case 3:
+                    addressBook.editContact();
+                    break;
+
+
                 default:
                     System.out.println(" Invalid Input!!! ");
                     break;
 
             }
-        } while (Number != 2);
+        } while (Number != 4);
     }
 
 }
